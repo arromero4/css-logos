@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 400px 400px 400px;
+  
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+/*YOUTUBE LOGO*/
+.youtube-logo {
+  background-color: firebrick;
+  width: 300px;
+  height: 200px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playBtn {
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 120px solid white;
+}
+
+/*FIGMA LOGO*/
+.figma-logo {
+  display: flex;
+  width: 200px;
+  flex-wrap: wrap;
+}
+
+.element {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.left {
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.right {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.circle {
+  border-radius: 50px;
+}
+
+.clip {
+  border-bottom-right-radius: 50px;
+}
+
+.orange {
+  background: #fb7266;
+}
+
+.purple {
+  background: #a061fa;
+}
+
+.blue {
+  background: #2ebdfa;
+}
+
+.green {
+  background: #00ce84;
+}
+
+/*MICROSOFT LOGO*/
+.microsoft-logo {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  grid-template-rows: auto;
+  grid-column-gap: 115px;
+  grid-row-gap: 15px;
+  margin-right: 80px;
+}
+.square {
+  width: 150px;
+  height: 150px;
+}
+
+.red {
+  background-color: #f35325;
+}
+.green {
+  background-color: #81bc06;
+}
+.blue {
+  background-color: #05a6f0;
+}
+.yellow {
+  background-color: #ffba08;
+}
+
+/*REACT LOGO*/
+
+.ball {
+  position: absolute;
+  width: 3.5vw;
+  height: 3.5vw;
+  border-radius: 50%;
+  background-color: #5ed3f3;
+}
+
+.ellipse {
+  position: absolute;
+  width: 6vw;
+  height: 22vw;
+  border-radius: 50%;
+  border: 1.1vw solid #5ed3f3;
+  
+}
+
+.rotate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: roll 15s linear 0.5s infinite;
+  }
+
+
+.ellipse1 {
+  transform: rotate(30deg);
+}
+
+.ellipse2 {
+  transform: rotate(-30deg);
+}
+
+.ellipse3 {
+  transform: rotate(90deg);
+}
+
+@keyframes roll {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*NETFLIX LOGO*/
+
+.netflix-logo{
+    margin: 20px;
+    height: 15rem;
+    width: 3rem;
+    border-left: 3rem solid #e50914;
+    border-right: 3rem solid #e50914;
+    
+}
+
+.netflix-logo::before{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #e50914;
+    transform: skewX(21.5deg);
+    box-shadow: 0 0 30px black;
+}
+
+/*GIT LOGO*/
+
+.git-logo{
+    height: 150px;
+    width: 150px;
+    background-color: #f06033;
+    border-radius: 15px;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.line1{
+    width: 110px;
+    background-color: white;
+    height: 10px;
+    top: 40px;
+    position: absolute;
+}
+
+.line1::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    top: -8px;
+    left: 30px;
+}
+
+.line1::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    top: -8px;
+    left: 90px;
+}
+
+.line2{
+    width: 90px;
+    background-color: white;
+    height: 12px;
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    transform: rotate(45deg);
+
+}
+
+.line2::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    top: -8px;
+    left: 70px;
+}
+
+/*GOOGLE LOGO*/
+.google-logo{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    border-top: 75px solid #ea4335;
+    border-right: 75px solid #4285f4;
+    border-bottom: 75px solid #34a853;
+    border-left: 75px solid #fbbc05;
+    border-radius: 50%;
+    background-color: azure;
+}
+
+.google-logo::before{
+    content: "";
+    /*z-index: 100; */
+    position: absolute;
+    top: 50%;
+    right: -65px;
+    transform: translateY(-50%);
+    width: 165px;
+    height: 75px;
+    background-color: #4285f4;
+}
+
+.google-logo::after{
+    content:"";
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 0;
+    height: 0;
+    border-top: 165px solid transparent;
+    border-right: 200px solid azure;
+}
